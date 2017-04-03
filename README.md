@@ -30,9 +30,10 @@ $ npm install
 4. Start the server
 
 Run to start the server:
-$ node app/server.js
+```
+$ npm start
 Listening on port 3000...
-
+```
 
 5. Test API
 
@@ -46,20 +47,28 @@ You should get a sample REST response.
 All implemented methods are GET (no POST, PUT, etc are implemented). You can run the following curl commands from the shell (remember to have the server running).
 
 /charts
+```
 $ curl -X GET http://localhost:3000/charts
+```
 Returns a list of available charts
 
 /charts:id
+```
 $ curl -X GET http://localhost:3000/charts/3
+```
 id : int
 Returns info about the specific chart id
 
 /charts:id/graphs
+```
 $ curl -X GET http://localhost:3000/charts/3/graphs
+```
 Returns an array of series for each day (if data is available)
 
 /charts/:id/graphs/:date
-$ curl -X GET http://localhost:3000/charts/3/graphs/2013-02-01
+```
+$ curl -X GET http://localhost:3000/charts/3/graphs/2017-04-01
+```
 date :  date, YYYY-MM-DD
 Returns an array of data for the specific date
 
