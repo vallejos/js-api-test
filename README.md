@@ -46,26 +46,26 @@ You should get a sample REST response.
 
 All implemented methods are GET (no POST, PUT, etc are implemented). You can run the following curl commands from the shell (remember to have the server running).
 
-/charts
+**/charts**
 ```
 $ curl -X GET http://localhost:3000/charts
 ```
 Returns a list of available charts
 
-/charts:id
+**/charts:id**
 ```
 $ curl -X GET http://localhost:3000/charts/3
 ```
 id : int
 Returns info about the specific chart id
 
-/charts:id/graphs
+**/charts:id/graphs**
 ```
 $ curl -X GET http://localhost:3000/charts/3/graphs
 ```
 Returns an array of series for each day (if data is available)
 
-/charts/:id/graphs/:date
+**/charts/:id/graphs/:date**
 ```
 $ curl -X GET http://localhost:3000/charts/3/graphs/2017-04-01
 ```
