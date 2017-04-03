@@ -1,14 +1,14 @@
 This sample REST API uses node to run a local server with a few sample routes. It requires Node.js
 
 
-1. Installing Node.js
+## Installing Node.js
 
 If you already have NodeJS installed, please skip this step and go to step 2.
 
 Go to http://nodejs.org to download the installer. Install NodeJS following the instructions specific for your OS.
 
 
-2. Get the application
+## Get the application
 
 Create a folder for the test:
 ```
@@ -20,14 +20,14 @@ Clone or download the zip from this repo: https://github.com/vallejos/js-api-tes
 Unzip to ~\api-test\ or `mv js-api-test ~\api-test`
 
 
-3. Set up the application
+## Set up the application
 $ cd ~\api-test\js-api-test
 
 Run to install dependencies:
 $ npm install
 
 
-4. Start the server
+## Start the server
 
 Run to start the server:
 ```
@@ -35,14 +35,14 @@ $ npm start
 Listening on port 3000...
 ```
 
-5. Test API
+## Test API
 
 Browse to http://localhost:3000/charts
 
 You should get a sample REST response.
 
 
-6. API methods examples
+## API methods examples
 
 All implemented methods are GET (no POST, PUT, etc are implemented). You can run the following curl commands from the shell (remember to have the server running).
 
@@ -73,12 +73,12 @@ date :  date, YYYY-MM-DD
 Returns an array of data for the specific date
 
 
-7. Observations
+## Observations
 
 Only the first days of each month contains data (01 to 07). The data for each month is the same. Don't worry, it's just some sample data for testing purposes :)
 
 
-8. The problem to solve
+## The problem to solve
 
 Here are the instructions to complete the test:
 
