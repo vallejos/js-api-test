@@ -52,14 +52,14 @@ $ curl -X GET http://localhost:3000/charts
 ```
 Returns a list of available charts
 
-**/charts:id**
+**/charts/:id**
 ```
 $ curl -X GET http://localhost:3000/charts/3
 ```
 id : int
 Returns info about the specific chart id
 
-**/charts:id/graphs**
+**/charts/:id/graphs**
 ```
 $ curl -X GET http://localhost:3000/charts/3/graphs
 ```
