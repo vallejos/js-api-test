@@ -21,11 +21,13 @@ Unzip to ~\api-test\ or `mv js-api-test ~\api-test`
 
 
 ## Set up the application
+```
 $ cd ~\api-test\js-api-test
-
+```
 Run to install dependencies:
+```
 $ npm install
-
+```
 
 ## Start the server
 
