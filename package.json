@@ -1,6 +1,6 @@
 {
-    "name": "percona-js-api-test",
-    "description": "Percona JS API Test Application",
+    "name": "js-api-test",
+    "description": "JS API Test Application",
     "version": "0.0.1",
     "private": true,
     "dependencies": {
