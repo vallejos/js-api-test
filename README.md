@@ -71,13 +71,15 @@ Only the first days of each month contains data (01 to 07). The data for each mo
 
 8. The problem to solve
 
-1. Clone or download this repo: https://github.com/vallejos/js-api-test/
-2. Using the provided sample api server, create an Angular JS app that will:
-- query the sample api to fetch the data
-- create graphs (you can use any library of your choice) with the sample data
-- create a chart selector to display only graphs for the specific chart and/or all the charts
-- create a date selector to display graphs for the specific dates
-3. Finally, create some tests to make sure everything works
-4. When you're done, zip the folder and send to us.
-5. If you have any questions please contact us.
-6. Feel free to send us any comment regarding your work.
+Here are the instructions to complete the test:
+
+- Clone or download this repo: https://github.com/vallejos/js-api-test/
+- Using the provided sample api server, create an Angular JS app that will:
+-- query the sample api to fetch the data
+-- create graphs (you can use any library of your choice) with the sample data
+-- create a chart selector to display only graphs for the specific chart and/or all the charts
+-- create a date selector to display graphs for the specific dates
+- Finally, create some tests to make sure everything works
+- When you're done, zip the folder and send to us.
+- If you have any questions please contact us.
+- Feel free to send us any comment regarding your work.
