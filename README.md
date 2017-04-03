@@ -3,25 +3,25 @@ This sample REST API uses node to run a local server with a few sample routes. I
 
 1. Installing Node.js
 
-Go to http://nodejs.org, and click the Install button.
+If you already have NodeJS installed, please skip this step and go to step 2.
 
-Run the installer that you just downloaded. When the installer completes, a message indicates that Node was installed at /usr/local/bin/node and npm was installed at /usr/local/bin/npm.
-
-At this point node.js is ready to use.
+Go to http://nodejs.org to download the installer. Install NodeJS following the instructions specific for your OS.
 
 
 2. Get the application
 
 Create a folder for the test:
-$ mkdir ~\percona-test
-$ cd ~\percona-test
+```
+$ mkdir ~\api-test
+$ cd ~\api-test
+```
 
-Clone or download the zip from this repo: https://github.com/kamuslhv/percona-js-api-test/
-Unzip to ~\percona-test\ or mv percona-js-api-test ~\percona-test
+Clone or download the zip from this repo: https://github.com/vallejos/js-api-test/
+Unzip to ~\api-test\ or `mv js-api-test ~\api-test`
 
 
 3. Set up the application
-$ cd ~\percona-test\percona-js-api-test
+$ cd ~\api-test\js-api-test
 
 Run to install dependencies:
 $ npm install
@@ -43,7 +43,7 @@ You should get a sample REST response.
 
 6. API methods examples
 
-All implemented methods are GET (no POST, PUT, etc are implemented). You can run the following curl commands from the shell (rememeber to have the server running).
+All implemented methods are GET (no POST, PUT, etc are implemented). You can run the following curl commands from the shell (remember to have the server running).
 
 /charts
 $ curl -X GET http://localhost:3000/charts
@@ -67,3 +67,17 @@ Returns an array of data for the specific date
 7. Observations
 
 Only the first days of each month contains data (01 to 07). The data for each month is the same. Don't worry, it's just some sample data for testing purposes :)
+
+
+8. The problem to solve
+
+1. Clone or download this repo: https://github.com/vallejos/js-api-test/
+2. Using the provided sample api server, create an Angular JS app that will:
+- query the sample api to fetch the data
+- create graphs (you can use any library of your choice) with the sample data
+- create a chart selector to display only graphs for the specific chart and/or all the charts
+- create a date selector to display graphs for the specific dates
+3. Finally, create some tests to make sure everything works
+4. When you're done, zip the folder and send to us.
+5. If you have any questions please contact us.
+6. Feel free to send us any comment regarding your work.
