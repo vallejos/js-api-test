@@ -12,17 +12,17 @@ Go to http://nodejs.org to download the installer. Install NodeJS following the 
 
 Create a folder for the test:
 ```
-$ mkdir ~\api-test
-$ cd ~\api-test
+$ mkdir ~/api-test
+$ cd ~/api-test
 ```
 
 Clone or download the zip from this repo: https://github.com/vallejos/js-api-test/
-Unzip to ~\api-test\ or `mv js-api-test ~\api-test`
+Unzip to ~/api-test/ or `mv js-api-test ~/api-test`
 
 
 ## Set up the application
 ```
-$ cd ~\api-test\js-api-test
+$ cd ~/api-test/js-api-test
 ```
 Run to install dependencies:
 ```
