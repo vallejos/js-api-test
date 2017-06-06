@@ -94,3 +94,4 @@ Here are the instructions to complete the test:
 - When you're done, zip the folder and send to us.
 - If you have any questions please contact us.
 - Feel free to send us any comment regarding your work.
+- Feel free to add anything that will make you feel proud of what you've done, whether it is documentation, a neat interface, etc.
