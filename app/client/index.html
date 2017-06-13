@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-controller='RootController'>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title ng-bind="app.title + ' - ' + page.name">Charts App</title>
+
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+
+
+<body>
+    <div class="wrap main" ng-class="page.id">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/" class="navbar-brand">Charts App</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ng-repeat="page in app.pages"
+                            ng-class="page.cls"
+                            ng-if="!page.hidden">
+                            <a href="" ng-click="openPage(page.id)">
+                                <span ng-bind="page.title"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <noscript>
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                    <span><strong>Notice: </strong> JavaScript is not enabled. Please enable JavaScript in your browser following these <a href="http://enable-javascript.com/" class="alert-link">instructions</a>.</span>
+                </div>
+            </noscript>
+
+            <div class="main" ui-view="page"></div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                Build: v0.1
+            </div>
+        </div>
+    </footer>
+
+    <script data-main="/js/main.js" id="mainJS" src="/lib/requirejs/require.js"></script>
+    <script>
+        require.config({
+            waitSeconds: 0
+        });
+    </script>
+  </body>
+</html>
