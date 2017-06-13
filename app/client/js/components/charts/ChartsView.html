@@ -1,0 +1,43 @@
+<div class="charts" ng-init="init()">
+    <div class="row">
+        <div class="col-sm-6">
+            <p class="input-group form-inline">
+                <label>Chart: &nbsp; </label>
+                <select class="form-control" id="chart"
+                    data-ng-options="item.name for item in charts"
+                    data-ng-model="selectedChart"
+                    ng-change="onSelectChart()">
+                </select>
+            </p>
+        </div>
+
+        <div class="col-sm-5 col-sm-offset-1 pull-right chart-date-tool">
+            <p class="input-group form-inline">
+                <span class="input-group-btn">
+                    <label>Date: &nbsp; </label>
+                </span>
+                <input type="text" class="form-control"
+                    uib-datepicker-popup
+                    ng-model="chartDate"
+                    is-open="chartDatePicker.opened"
+                    datepicker-options="chartDateOptions"
+                    ng-required="true"
+                    close-text="Close"
+                    ng-change="onSelectChartDate()" />
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" ng-click="openChartDatePicker()">
+                        <i class="glyphicon glyphicon-calendar"></i>
+                    </button>
+                </span>
+                <button type="button" class="btn btn-default clear-date" ng-click="clearDate()">Clear</button>
+            </p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 chart-container">
+            <am-chart id="myFirstChart" options="amChartOptions"></am-chart>
+        </div>
+    </div>
+</div>
